@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * ForKelipatan05
  */
-public class ForKelipatan05 {
+public class WhilaKelipatan05 {
 
     public static void main(String[] args) {
         int kelipatan;
@@ -15,18 +15,31 @@ public class ForKelipatan05 {
         kelipatan = scan.nextInt();
 
        
-		for (int i = 1 ; i<= 50 ; i++) {
+		/*for (int i = 1 ; i<= 50 ; i++) {
             if (i % kelipatan == 0) {
                 jumlah += i;
                 counter++;
             }rata = (double) jumlah / counter;
         }
-       
+        /* */
 
-      
+        int i = 1;
+        while (i <= 50) 
+        {
+           if (i % kelipatan == 0) 
+           {
+            jumlah += i;
+            counter++;
+
+         
+           }
+             i++; 
+            //rata = (double) jumlah / counter; 
+        }
+        
         
 
- 
+         rata = (double) jumlah / counter; 
         System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan,counter);
    
 		System.out.printf("Total Bilangan kelipatan %d dari 1 sampai 50 adalah %d\n" , kelipatan, jumlah);
