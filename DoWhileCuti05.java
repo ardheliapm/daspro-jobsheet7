@@ -26,7 +26,7 @@ public class DoWhileCuti05 {
                             System.out.println("Sisa jatah cuti : " + jatahCuti);
                         } else {
                             System.out.println("Sisa jatah cuti Anda tidak mencukupi");
-                            System.out.println("Maaf Salah, Silahkan Masukkan Jatah Cuti Anda Lagi: ");
+                            System.out.print("Maaf Salah, Silahkan Masukkan Jatah Cuti Anda Lagi: ");
                             konfirmasi = sc.next();
 
                             if (konfirmasi.equalsIgnoreCase("y")) {
@@ -39,7 +39,11 @@ public class DoWhileCuti05 {
                            
                         }
 
-                    }
+}
+else if (konfirmasi.equalsIgnoreCase("t")) {
+    System.out.println("Terimakasih Telah Mengisi, Semangat Bekerja!");
+    break;
+                        }
         } while (jatahCuti > 0);
 
     }
